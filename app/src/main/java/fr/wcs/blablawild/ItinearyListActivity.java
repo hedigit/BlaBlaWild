@@ -16,7 +16,7 @@ public class ItinearyListActivity extends AppCompatActivity {
         Intent intent1 = getIntent();
         String intentname2 = intent.getStringExtra("name");
 
-       setTitle(intentdeparturesearch + ">> " + intentname2);
+       setTitle(intentdeparturesearch + " "+ ">>" + intentname2);
 
 
 
