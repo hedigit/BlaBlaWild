@@ -29,15 +29,15 @@ public class ItinearySearchActivity extends AppCompatActivity {
                 EditText destinationcontent = findViewById(R.id.name);
                 String destinationValue = destinationcontent.getText().toString();
 
-                if (departureValue.isEmpty() && destinationValue.isEmpty()) {
+                if (departureValue.isEmpty() || destinationValue.isEmpty()) {
                     Toast.makeText(ItinearySearchActivity.this, "Please enter your Departure and your Destination", Toast.LENGTH_SHORT).show();
 
 
                 }
                 else {
                     Intent intentcontent = new Intent(ItinearySearchActivity.this, ItinearyListActivity.class);
-                    intentcontent.putExtra(depart, departureValue);
-                    intentcontent.putExtra(name, destinationValue);
+                    intentcontent.putExtra("message1", departureValue);
+                    intentcontent.putExtra("message2", destinationValue);
                     ItinearySearchActivity.this.startActivity(intentcontent);
                 }
             }
