@@ -10,4 +10,18 @@
     <string name="date_of_departure">Date of Departure</string>
     <string name="search">SEARCH</string>
     <string name="add_elements_listview">Add elements listView</string>
+    <string name="model">Model</string>
+    <string name="brand">BRAND</string>
+    <string name="kilometers">Kilometers</string>
+    <string name="send">SEND</string>
+    <string name="hours">Hours</string>
+
+    <string-array name="vehiclelist">
+        <item>Please select…</item>
+        <item>Car</item>
+        <item>Boat</item>
+        <item>Plane</item>
+    </string-array>
+
+
 </resources>

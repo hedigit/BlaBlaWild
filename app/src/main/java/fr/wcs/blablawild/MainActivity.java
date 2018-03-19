@@ -23,14 +23,23 @@ public class MainActivity extends AppCompatActivity
 
         Button button = findViewById(R.id.btn);
         button.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, ItinearySearchActivity.class);
                 MainActivity.this.startActivity(intent);
 
+
             }
         });
-
+            Button buttonv = findViewById(R.id.vehicle_btn);
+            buttonv.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intentv = new Intent(MainActivity.this,VehicleActivity.class);
+                    MainActivity.this.startActivity(intentv);
+                }
+            });
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
